@@ -1,0 +1,29 @@
+<h1>People#show</h1>
+<p><%= @mag %></p>
+<pre>
+  <table>
+    <tr>
+      <th>ID</th>
+      <td><%=@data.id %></td>
+    </tr>
+    <tr>
+      <th>Name</th>
+      <td><%= @data.name %></td>
+    </tr>
+    <tr>
+      <th>Mail</th>
+      <td><%= @data.mail %></td>
+    </tr>
+    <tr>
+      <th>Massage</th>
+      <%#data.messageがnilじゃないならmessage.titleを表示nilならnoneを表示 %>
+      <td>
+        <% if @data.message != nil then %>
+        <%@data.message.each do |obj| %>
+          <%='[ ' + obj.title + ']'%>
+          <% end %>
+        <% end %>
+      </td>
+    </tr>
+  </table>
+</pre>

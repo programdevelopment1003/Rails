@@ -1,0 +1,7 @@
+<h1> <%= @title %></h1>
+<p><%= @msg %></p>
+<%#デフォルトでPOST送信 %>
+<%= form_tag(controller: "helo" , action: "index") do%>
+<%= text_field_tag("input1") %>
+<%= submit_tag("Click") %>
+<%end %>

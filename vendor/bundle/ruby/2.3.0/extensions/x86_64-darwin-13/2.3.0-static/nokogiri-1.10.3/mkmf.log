@@ -1,0 +1,12 @@
+"clang -o conftest -I/Applications/MAMP/Library/include/ruby-2.3.0/x86_64-darwin13 -I/Applications/MAMP/Library/include/ruby-2.3.0/ruby/backward -I/Applications/MAMP/Library/include/ruby-2.3.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -pipe  -I /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/libxml2 conftest.c  -L. -L/Applications/MAMP/Library/lib -L. -fstack-protector     -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc  "
+xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return 0;
+6: }
+/* end */
+

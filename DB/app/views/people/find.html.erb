@@ -1,0 +1,33 @@
+<h1>People#find</h1>
+<table>
+  <%=form_tag(controller: "people",action: "find") do%>
+  <tr>
+    <th>FIND</th>
+    <td><%= text_field_tag("find") %></td>
+  </tr>
+    <tr>
+      <th></th>
+      <td><%=submit_tag("Click") %></td>
+    </tr>
+    <%end %>
+
+</table>
+
+<hr>
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Nmae</th>
+    <th>Age</th>
+    <th>Mail</th>
+  </tr>
+  <% @array.each do |obj| %>
+
+ <tr>
+  <td><%=obj.id %></td>
+   <td><%=obj.name %></td>
+   <td><%=obj.age %></td>
+    <td><%=obj.mail %></td>
+ </tr>
+  <%end %>
+</table>

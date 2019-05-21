@@ -1,0 +1,15 @@
+current directory: /Users/hideki/Ralis/vendor/bundle/ruby/2.3.0/gems/libv8-3.16.14.19/ext/libv8
+/Applications/MAMP/Library/bin/ruby -r ./siteconf20190512-53287-12btp1s.rb extconf.rb
+creating Makefile
+/Users/hideki/Ralis/vendor/bundle/ruby/2.3.0/gems/libv8-3.16.14.19/ext/libv8/compiler.rb:44:in `version_string_of': Could not get version string of compiler c++ (RuntimeError)
+	from /Users/hideki/Ralis/vendor/bundle/ruby/2.3.0/gems/libv8-3.16.14.19/ext/libv8/compiler.rb:32:in `type_of'
+	from /Users/hideki/Ralis/vendor/bundle/ruby/2.3.0/gems/libv8-3.16.14.19/ext/libv8/compiler.rb:28:in `block in available_compilers'
+	from /Users/hideki/Ralis/vendor/bundle/ruby/2.3.0/gems/libv8-3.16.14.19/ext/libv8/compiler.rb:28:in `map'
+	from /Users/hideki/Ralis/vendor/bundle/ruby/2.3.0/gems/libv8-3.16.14.19/ext/libv8/compiler.rb:28:in `available_compilers'
+	from /Users/hideki/Ralis/vendor/bundle/ruby/2.3.0/gems/libv8-3.16.14.19/ext/libv8/builder.rb:108:in `choose_compiler'
+	from /Users/hideki/Ralis/vendor/bundle/ruby/2.3.0/gems/libv8-3.16.14.19/ext/libv8/builder.rb:16:in `initialize'
+	from /Users/hideki/Ralis/vendor/bundle/ruby/2.3.0/gems/libv8-3.16.14.19/ext/libv8/location.rb:23:in `new'
+	from /Users/hideki/Ralis/vendor/bundle/ruby/2.3.0/gems/libv8-3.16.14.19/ext/libv8/location.rb:23:in `install!'
+	from extconf.rb:7:in `<main>'
+
+extconf failed, exit code 1

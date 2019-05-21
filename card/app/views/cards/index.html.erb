@@ -1,0 +1,23 @@
+<h1>Cards#index</h1>
+<p>Find me in app/views/cards/index.html.erb</p>
+
+<table eidth="100%">
+  <tr>
+    <th>ID</th>
+    <td>題名</td>
+    <th>著作</th>
+    <th colspan="2"></th>
+  </tr>
+  <% @cards.each do |obj|  %>
+  <tr>
+    <td width="35px"><%=obj.id %></td>
+    <td width="50%"><a href="/cards/edit/<%=obj.id %>"><%=obj.title %></a> </td>
+    <td><%=obj.author %></td>
+    <td width="40px"><a href="/cards/edit<%=obj.id %>">編集</a> </td>
+    <td width="40px"><a href="javascript:width.deleteData(
+<%=(obj.id.to_s + ",".to_s + obj.title.to_s)
+                                       .html_safe %>);">削除</a> </td>
+  </tr>
+  <% end %>
+</table>
+<p class="link"><a href="/cards/add">※新しいデータを入力　&gt;&gt;</a></p>

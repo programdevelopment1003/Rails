@@ -1,0 +1,21 @@
+current directory: /vagrant/app/qiita/sample/vendor/bundle/ruby/2.4.0/gems/mini_racer-0.1.15/ext/mini_racer_extension
+/home/vagrant/.rbenv/versions/2.4.2/bin/ruby -r ./siteconf20180701-32760-1cnm7g2.rb extconf.rb
+checking for -lpthread... yes
+creating Makefile
+
+current directory: /vagrant/app/qiita/sample/vendor/bundle/ruby/2.4.0/gems/mini_racer-0.1.15/ext/mini_racer_extension
+make "DESTDIR=" clean
+
+current directory: /vagrant/app/qiita/sample/vendor/bundle/ruby/2.4.0/gems/mini_racer-0.1.15/ext/mini_racer_extension
+make "DESTDIR="
+compiling mini_racer_extension.cc
+cc1plus: 警告: コマンドラインオプション ‘-Wimplicit-int’ は C/ObjC 用としては有効ですが、C++ 用としては有効ではありません [デフォルトで有効]
+cc1plus: 警告: 認識できないコマンドラインオプション "-Wno-self-assign" です [デフォルトで有効]
+cc1plus: 警告: 認識できないコマンドラインオプション "-Wno-constant-logical-operand" です [デフォルトで有効]
+cc1plus: 警告: 認識できないコマンドラインオプション "-Wno-parentheses-equality" です [デフォルトで有効]
+cc1plus: 警告: 認識できないコマンドラインオプション "-Wno-tautological-compare" です [デフォルトで有効]
+linking shared-object mini_racer_extension.so
+
+current directory: /vagrant/app/qiita/sample/vendor/bundle/ruby/2.4.0/gems/mini_racer-0.1.15/ext/mini_racer_extension
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 mini_racer_extension.so ./.gem.20180701-32760-158fb97
